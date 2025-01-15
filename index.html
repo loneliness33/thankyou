@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>havolani bosing</title>
+    <style>
+        @font-face {
+            font-family: 'Dwarven Stonecraft';
+            src: url('DwarvenStonecraft.woff2') format('woff2'),
+                 url('DwarvenStonecraft.woff') format('woff');
+        }
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Vertikal ravishda joylashtirish */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000; /* Black background */
+            font-family: 'Dwarven Stonecraft', sans-serif;
+            overflow: hidden;
+        }
+        h2 {
+            color: rgb(108, 136, 226); /* Oq rang */
+            margin-bottom: 10px; /* Pastki marginni kamaytirdi */
+        }
+        h3{ 
+            color: rgb(108, 136, 226); /* Oq rang */
+            margin-bottom: 5px; /* Pastki marginni kamaytirdi */
+        }
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            display: inline-block;
+            opacity: 0; /* Initially hidden */
+            animation: glow 0.25s infinite alternate, scatter 0.5s forwards, appear 0.08s forwards; /* 2x faster */
+            background: linear-gradient(90deg, #efefef, #4B0082, #008080, #c6dc08); /* Multiple colors for gradient */
+            -webkit-background-clip: text;
+            color: rgb(255, 0, 0); /* Qizil rang */
+            margin: 10px 0; /* Yuqori va pastki marginni kamaytirdi */
+        }
+        h4 {
+            color: rgb(78, 74, 74); /* To'q kulrang rang */
+            margin-top: 20px; /* Yuqoridan marginni kamaytirdi */
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #a4a9ab, 0 0 20px #ea0303, 0 0 200px #c70011, 0 0 40px #51427a, 0 0 50px #20932a;
+            }
+            100% {
+                text-shadow: 0 0 5px #1106d7, 0 0 20px #bd9f68, 0 0 30px #051cc6, 0 0 40px #a50b0b, 0 0 50px #06148d;
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes scatter {
+            0% {
+                opacity: 1;
+                transform: translateY(2);
+            }
+            100% {
+                opacity: 2;
+                transform: translateY(-200px) rotate(720deg) scale(0.5);
+            }
+        }
+
+        @keyframes appear {
+            0% {
+                opacity: 2;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Assalamu alekum.</h2>
+    <h1>KATTA RAHMAT!</h1>
+    <h4>Niyatlaringiz hamrohingiz bo'lsin.</h4>
+</body>
+</html>
